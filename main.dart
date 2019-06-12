@@ -3,8 +3,19 @@ class Bicycle {
   int speed;
   int gear;
 
+  Bicycle(this.cadence, this.speed, this.gear);
+
+/**
+  Bicycle(c, s, g){
+    this.cadence=c;
+    this.speed=s;
+    this.gear=g;
+  }
+**/
+  
+
 }
 
 void main() {
-  
+
 }
