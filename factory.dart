@@ -3,6 +3,12 @@
 import 'dart:math';
 
 abstract class Shape{
+
+  factory Shape(String type) {
+    if (type == 'circle') return Circle(2);
+    if (type == 'square') return Square(2);
+    throw 'Can\'t create $type.';
+  }
   num get area;
 }
 
@@ -27,8 +33,12 @@ Shape shapeFactory(String type){
 }
 
 main(){
-  final circle = shapeFactory('circle');
-  final square = shapeFactory('square');
+  final circle = Shape('circle');
+  final square = Shape('square');
+
+  /** final circle = shapeFactory('circle');
+  final square = shapeFactory('square');*/
+
   print(circle.area);
   print(square.area);
 
