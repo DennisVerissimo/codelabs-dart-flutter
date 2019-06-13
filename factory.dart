@@ -32,6 +32,13 @@ Shape shapeFactory(String type){
   throw 'Can\t create $type.';
 }
 
+/* implementando uma interface */
+
+class CircleMock implements Circle{
+  num area;
+  num radius;
+}
+
 main(){
   final circle = Shape('circle');
   final square = Shape('square');
