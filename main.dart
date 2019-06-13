@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 class Bicycle {
   int cadence;
@@ -36,3 +37,23 @@ void main() {
   var bike = Bicycle(2, 1);
   print(bike);
 }
+
+/** Item 3 - Parâmetros opcionais */
+
+class Rectangle{
+  int width;
+  int height;
+  Point origin;
+
+
+Rectangle({this.origin = const Point(0,0), this.width = 0, this.height = 0});
+
+@override
+String ToString () => 'Origin: (${origin.x}, ${oringn.y}), width: $width, height: $height';
+
+
+
+}
+
+
+
