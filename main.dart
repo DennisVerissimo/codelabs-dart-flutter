@@ -9,6 +9,14 @@ class Bicycle {
 
   int get speed => _speed;
 
+  void applyBrake(int decrement){
+    _speed -= decrement;
+  }
+
+  void speedUp(int increment){
+    _speed += increment;
+  }
+
 
   @override
   String toString() => 'Bicycle: $speed mph';
